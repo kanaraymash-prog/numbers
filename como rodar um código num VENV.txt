@@ -89,3 +89,13 @@ git commit -m "Atualiza lógica de cálculo em bilion.py"
 #4 ver o histórico de modificações:
 git log --oneline
 
+#5 Apague todos os arquivos do seu repositório e restaure para versão que funcionava:
+git checkout {hash EM git log --oneline}
+Exemplo: git checkout 5351731
+
+#1 Ver todas as versões na história geral (não só a principal)
+git reflog
+
+#2 Restaurar para versão ferrada:
+git reset --hard <hash-do-reflog>
+Exemplo: git reset --hard 9836989
