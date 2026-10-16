@@ -33,6 +33,9 @@ sudo apt install git
 
 10. Verificar a versão instalada:
 git --version
+
+11. Copiar uma pasta inteira de um canto para o outro:
+cp -r /{URL}/ /{URL}/
 ==================================================
 Ver em qual repositório vs está:
 pwa
@@ -85,3 +88,4 @@ git commit -m "Atualiza lógica de cálculo em bilion.py"
 
 #4 ver o histórico de modificações:
 git log --oneline
+
