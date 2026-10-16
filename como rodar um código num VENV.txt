@@ -1,0 +1,74 @@
+1. Priemiro você entra na pasta projeto que você vai usar.
+No coração dela coloca: 
+
+cd ~/projetos/numbers
+python3 -m venv .venv
+
+2. Ativar o VENV no terminal:
+source .venv/bin/activate
+
+3. Mosstra onde está o python3 sendo usado:
+which python
+
+4. Apatir de agora as bibliotecas são baixadas no lugar certo:
+pip install {BLA-BLA-BLA}
+
+5. para sair do modo (.VENV):
+deactivate
+
+6. Atualizar o PIP (do venv):
+pip install --upgrade pip
+
+=============================================
+
+7. Adicionar o PPA:
+Instalador via PPA Oficial:
+sudo add-apt-repository ppa:git-core/ppa
+
+8. Atualizar lista de pacotes:
+sudo apt update
+
+9. Instalar e/ou atualizar o Git
+sudo apt install git
+
+10. Verificar a versão instalada:
+git --version
+==================================================
+Ver em qual repositório vs está:
+pwa
+
+Ver os arquivos do repositório:
+ls -la
+
+Como instalar git em um repositório/ inicializar o repositório GIT:
+git init
+
+Configurar a idendtidade pela primeira vez:
+git config --global user.name "Caua"
+git config --global user.email "caua.louzeiro@sempreceub.com"
+
+Verificar o STATUS de informações:
+git config --list
+
+//Criar o GitIgnore e configurar:
+#1 - primeiro passo (criar o gitignore):
+nano .gitignore
+
+#2 - segundo passo (colar isso no nano):
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.log
+.env
+
+// Fazer Commit:
+#1 
+git add .
+
+#2
+git status  
+
+#3
+git commit -m "Commit inicial: projeto numbers"
