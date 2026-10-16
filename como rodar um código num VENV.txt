@@ -63,7 +63,7 @@ __pycache__/
 *.log
 .env
 
-// Fazer Commit:
+// Fazer o primeiro Commit:
 #1 
 git add .
 
@@ -72,3 +72,10 @@ git status
 
 #3
 git commit -m "Commit inicial: projeto numbers"
+
+// Atualizar o git:
+#1 Veja o que mudou:
+git status
+
+#2 Adicionar as mudanças:
+git add . 
