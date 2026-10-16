@@ -79,3 +79,9 @@ git status
 
 #2 Adicionar as mudanças:
 git add . 
+
+#3 Comitar as mudanças:
+git commit -m "Atualiza lógica de cálculo em bilion.py"
+
+#4 ver o histórico de modificações:
+git log --oneline

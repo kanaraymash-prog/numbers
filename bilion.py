@@ -30,3 +30,4 @@ else:
     with open(nome_arquivo, "w") as f:
         f.write(str(valor))
     print(f"Número muito grande – salvo em '{nome_arquivo}'") 
+    
