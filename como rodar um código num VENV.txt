@@ -99,3 +99,25 @@ git reflog
 #2 Restaurar para versão ferrada:
 git reset --hard <hash-do-reflog>
 Exemplo: git reset --hard 9836989
+
+---
+
+Como criar o reposório a distância no github:
+
+#1 Baixar o github CLI:
+sudo apt install gh
+
+#2 Autenticação (abre o navegador uma única vez para autorizar)
+gh auth login
+
+#3 Navegue até a opção HTTPS e insira o código do CLI:
+! First copy your one-time code: 31A4-A8CE
+
+#4.1 Depois de logado, criar o repositório dentro do projeto:
+gh repo create numbers --public --source=. --push
+
+#4.2 Garantir que o branch local se chama Main:
+git branch -M main
+
+#4.3 Enviar os commits:
+git push -u origin main
