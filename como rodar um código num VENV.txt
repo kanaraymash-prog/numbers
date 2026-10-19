@@ -128,3 +128,6 @@ git reset --hard 00b29a5
 
 git log --oneline -5
 git status
+
+4.5 Use esse comando para ter certeza que está na "main":
+git branch --show-current
