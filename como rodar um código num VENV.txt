@@ -69,6 +69,8 @@ __pycache__/
 // Fazer o primeiro Commit:
 #1 
 git add .
+ou
+git add -A (para todo o projeto)
 
 #2
 git status  
@@ -82,6 +84,15 @@ git status
 
 #2 Adicionar as mudanças:
 git add . 
+
+#4 Sempre testar "se está na main, antes de comitar":
+git branch --show-current
+// Deve aparecer main, e não HEAD.
+
+#5 Sempre verificar arquivos sensíveis antes de commitar:
+// git status --ignored | head -20
+
+
 
 #3 Comitar as mudanças:
 git commit -m "Atualiza lógica de cálculo em bilion.py"
@@ -131,3 +142,6 @@ git status
 
 4.5 Use esse comando para ter certeza que está na "main":
 git branch --show-current
+
+4.6 Para abrir o repostório no navegador:
+gh browse
