@@ -125,5 +125,6 @@ git push -u origin main
 4.4 Trazer o main de volta para o tal:
 git reset --hard 00b29a5
 
+
 git log --oneline -5
 git status
